@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS users (
+ id int NOT NULL AUTO_INCREMENT,
+ username varchar(50) NOT NULL,
+ email varchar(50) NOT NULL,
+ password varchar(50) NOT NULL,
+ last_notice datetime,
+ PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS projects (
+  id int NOT NULL AUTO_INCREMENT,
+  project_name varchar(50) NOT NULL,
+  author int,
+  PRIMARY KEY (id),
+  FOREIGN KEY (author) REFERENCES users(id)
+);
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id int NOT NULL AUTO_INCREMENT,
+    task_name varchar(50) NOT NULL,
+    project varchar(50) NOT NULL,
+    author int,
+    done boolean DEFAULT 0,
+    create_datetime datetime NOT NULL,
+    filename varchar(100) DEFAULT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (author) REFERENCES users(id)
+);
