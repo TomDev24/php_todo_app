@@ -38,6 +38,7 @@ Its alright - The best thing you can do is leave out the action attribute altoge
 If you leave it out, the form will be submitted to the document's address, i.e. the same page.
 
 ## Among '$_REQUEST', $_GET and $_POST which one should i use?
+https://stackoverflow.com/questions/13447554/how-to-get-input-field-value-using-php
 https://stackoverflow.com/questions/1924939/among-request-get-and-post-which-one-is-the-fastest
 If I had to choose, I would probably not use $\_REQUEST, and I
 would choose $\_GET or $\_POST -- depending on what my application should do
@@ -213,6 +214,8 @@ https://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php
 [bind_param function](https://www.php.net/manual/ru/mysqli-stmt.bind-param.php)
 [The mysqli_stmt class](https://www.php.net/manual/en/class.mysqli-stmt.php)
 [The mysqli_result class](https://www.php.net/manual/en/class.mysqli-result.php)
+[SQL SELECT WHERE field contains words](https://stackoverflow.com/questions/14290857/sql-select-where-field-contains-words)
+
 
 vimgrep and cn and cp
 
